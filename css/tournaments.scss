@@ -1,0 +1,205 @@
+.tournaments-grid
+{
+  display: grid;
+  grid-template-columns: 20% 78% ;
+  grid-column-gap: 2%;
+  grid-row-gap: 16px;
+}
+.season-table{
+  overflow: hidden;
+}
+.parent-div-witch-table
+{
+  overflow: auto;
+}
+.season-nav
+{
+  grid-column: 1/2;
+
+}
+.seaseon-table
+{
+  grid-column: 2/3;
+}
+.season-tab
+{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.season-tab-item
+{
+  padding: 14px 12px;
+  background: #a2a2a2;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.season-item:hover:not(.active-tab)
+{
+  background: #ff7571;
+  transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.season-tab-item:hover:not(.active-tab)
+{
+  background: #ff7571;
+  transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.season-item
+{
+  text-transform:uppercase;
+  font-size: 24px;
+  padding: 12px 14px;
+  border-radius: 2px;
+  background: #a2a2a2;
+  margin: 0 0 12px 0;
+  color: white;
+  cursor: pointer;
+}
+.active-tab
+{
+  background: #ff4641;
+  color: white;
+}
+.this-table-grid
+{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  //grid-column-gap: 16px;
+  grid-row-gap: 12px;
+  padding: 16px 8px;
+  max-height: 600px;
+  overflow: auto;
+}
+.season-head-item
+{
+  font-size: 18px;
+  background: #ff7571;
+  color: white;
+}
+.season-table-cell
+{
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell-size
+{
+  font-size: 18px;
+}
+.tournament-rules-grid
+{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-column-gap: 2%;
+  grid-row-gap: 16px;
+}
+.lobby-items
+{
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-gap: 2%;
+}
+.lobby-number
+{
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.lobby-column
+{
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px;
+  background: #fbb8b6;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 335px;
+  box-shadow: 0px 0px 3px 2px black;
+}
+.lobby-info-item
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #ffffffab;
+  border-radius: 4px;
+}
+.lobby-info-item:last-of-type
+{
+  margin-bottom: 0;
+}
+.lobby-item:first-of-type
+{
+  margin-left: 0;
+}
+
+.lobby-item
+{
+  font-size: 18px;
+  margin-left: 8px;
+}
+.grey-column
+{
+  background: #d0d0d0;
+}
+.white-column
+{
+  background: white;
+}
+.win-column
+{
+  background: white;
+}
+.lose-column
+{
+  background: #a5a4a4;
+}
+@media (max-width: 1024px) {
+  .cell-size
+  {
+    font-size: 14px;
+  }
+  .season-head-item
+  {
+    font-size: 16px;
+  }
+  .season-tab-item
+  {
+    font-size: 16px;
+  }
+}
+@media  (max-width: 768px){
+  .tournaments-grid
+  {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .this-table-grid
+  {
+    //grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    min-width: 500px;
+  }
+  .season-table-cell
+  {
+    padding: 8px 4px;
+  }
+  .season-tab-item
+  {
+    font-size: 15px;
+  }
+}
+@media  (max-width: 500px){
+  .season-tab
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

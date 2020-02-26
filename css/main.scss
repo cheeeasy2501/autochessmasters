@@ -1,0 +1,643 @@
+$background-one: #eaf4f5;
+$background-two: white;
+$h-color-text:#fe473f;
+$font-family:'Montserrat', sans-serif;
+$link-color:#000;
+$grey-text:#515252;
+$button-color:#FFF;
+$button-background:#ff4641;
+body
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.container
+{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+p ,a, ul, ol, li,html,body,h1
+{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: $font-family;
+  cursor: default;
+}
+a{
+  cursor: pointer;
+}
+
+.header-block
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-link
+{
+  margin:0 0 0 8px;
+}
+.link:hover
+{
+  background: #ff4641;
+  color: white;
+}
+.header-container
+{
+  padding: 32px 0;
+}
+.header-text
+{
+  font-size: 28px;
+  color: $h-color-text;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-text:hover
+{
+  color: white;
+  background: #ff4641;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+.link
+{
+  font-size: 20px;
+  color: $link-color;
+  border-radius: 4px;
+  padding: 8px;
+  transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-container
+{
+  padding: 48px 0;
+}
+.fisrt-section
+{
+  background: $background-one;
+}
+.annons-block
+{
+  grid-column: 2/12;
+  display: flex;
+  flex-direction: column;
+  color: $grey-text;
+  align-items: center;
+  justify-content: center;
+  grid-row: 1/2;
+}
+.title-text
+{
+  position: relative;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $grey-text;
+}
+.title-date
+{
+  margin-top: 10px;
+  font-size: 24px;
+}
+.big-button
+{
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  padding: 24px 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: $button-color;
+  background: $button-background;
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+.big-button:hover
+{
+  opacity: 0.8;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 0px black;
+}
+.more-block
+{
+  grid-column: 8/13;
+  display: flex;
+  grid-row: 3;
+  justify-content: flex-end;
+}
+.second-section
+{
+  background: $background-two;
+}
+.winners-block
+{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 16px;
+}
+.winners
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 3/6;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 2px #ff4641;
+}
+.youtube-block
+{
+  grid-column: 7/13;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.winners-title
+{
+  font-weight: bold;
+  margin: 16px 0 16px 0;
+}
+.win-placement
+{
+  margin: 0 0 12px 0;
+  font-size: 20px;
+}
+.season-text {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 32px 0;
+}
+.winners-title
+{
+  font-size: 28px;
+}
+.video-links
+{
+  display: flex;
+}
+.video-link
+{
+  margin-left: 8px;
+}
+.youtube-link
+{
+  background: red;
+  color: white;
+  padding: 14px 12px;
+  border-radius: 4px;
+  margin:16px 8px 8px 8px;
+  transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.twitch-link
+{
+  background: #5b27a7;
+  color: white;
+  padding: 14px 12px;
+  border-radius: 4px;
+  margin:16px 8px 8px 8px;
+  transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.youtube-link:hover
+{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 0px black;
+}
+.twitch-link:hover
+{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 0px black;
+}
+.footer-grid
+{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  margin: 24px 0;
+}
+.footer-menu
+{
+  align-items: center;
+  grid-column: 1/5;
+  display: flex;
+  justify-content: space-between;
+}
+.social-block
+{
+  grid-column: 1/9;
+  display: flex;
+  align-items: center;
+}
+.social-title
+{
+  font-weight: bold;
+  font-size: 18px;
+}
+.social-link
+{
+  display: flex;
+}
+.social-item
+{
+  margin-left: 12px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 4px;
+  transition: .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-item:hover
+{
+  box-shadow: 0px 0px 5px 0px black;
+  transform: scale(1.2);
+}
+.broadcast-title
+{
+  font-weight: 700;
+  grid-column: 9/13;
+  grid-row: 1/2;
+  font-size: 18px;
+}
+.broadcast
+{
+  display: flex;
+  grid-column: 9/13;
+  position: relative;
+}
+.broadcast-num
+{
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  border: 0;
+  margin: -2px;
+  font-size: 14px;
+  background: #9147ff;
+  color: white;
+  border-radius: 50%;
+  padding: 3px;
+  width: 18px;
+}
+.youtube-video
+{
+  width: 100%;
+  display: flex;
+}
+.my-broadcasts
+{
+  display: flex;
+  grid-column: 9/13;
+  justify-content: flex-end;
+}
+.my-broadcasts a
+{
+  width: 100%;
+}
+.back-image
+{
+  background: url(/images/trent.png) no-repeat;
+  grid-row: 1/4;
+  grid-column: 1/7;
+  min-height: 500px;
+  width: 100%;
+  background-size: contain;
+}
+.back-snow
+{
+  background: url(/images/snow-4.png) no-repeat;
+  border-radius: 4%;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: contain!important;
+}
+.back-snow-2
+{
+  background: url(/images/snow-3.png) no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  border-radius: 4%;
+}
+.annons-grid
+{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 16px;
+}
+.win-placements
+{
+  display: flex;
+  flex-direction: column;
+}
+.countdown
+{
+  grid-column: 6/9;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  justify-content: center;
+  background: #ff4641;
+  justify-content: center;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+.video
+{
+  width: 100%;
+  //min-width: 50vh;
+  height: 100%;
+  min-height: 300px;
+}
+.countdown-title
+{
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+.countdown-time{
+
+}
+.title-text:before {
+  display: flex;
+  position: absolute;
+  content: "";
+  height: 4px;
+  background-color: #ff4641;
+  border-radius: 4px;
+  bottom: -4px;
+  left: 5%;
+  right: 5%;
+}
+.bottom-footer
+{
+  background: #ff605cde;
+  grid-column: 1/13;
+}
+.footer-container
+{
+  padding:24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-item
+{
+  font-size: 14px;
+  color: white;
+  margin-bottom: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.dev-info
+{
+  display: flex;
+  flex-direction: column;
+}
+footer a{
+  cursor: pointer;
+}
+@media (max-width: 1024px)
+{
+  .back-image
+  {
+    display: none;
+  }
+  .countdown
+  {
+    grid-column: 1/5;
+    grid-row: 2/4;
+  }
+  .winners
+  {
+    grid-column: 1/5;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+@media (max-width: 950px)
+{
+  .season-text
+  {
+    margin:0;
+  }
+  .video-links
+  {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+  .winners
+  {
+    grid-column: 1/13;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 32px 0;
+  }
+  .win-placements
+  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 16px;
+    grid-gap: 16px;
+
+  }
+  .countdown
+  {
+    grid-column: 1/6;
+  }
+  .youtube-block
+  {
+    align-items: center;
+    grid-column: 1/13;
+    flex-direction: row;
+  }
+  .youtube-link
+  {
+    display: flex;
+    align-self: self-start;
+    margin-top: 0;
+    margin-left: 16px;
+  }
+  .twitch-link
+  {
+    display: flex;
+    align-self: self-start;
+    margin-top: 0;
+    margin-left: 16px;
+  }
+  .broadcast-title
+  {
+    grid-row: 3/4;
+    grid-column: 1/10;
+    align-items: center;
+    display: flex;
+
+  }
+  .my-broadcasts
+  {
+    grid-row: 3/4;
+    justify-content: flex-start;
+  }
+  .social-block
+  {
+    grid-column: 1/13;
+  }
+
+}
+@media (max-width: 768px) {
+  .container{
+    padding: 0 16px;
+  }
+  .header-block
+  {
+    flex-direction: column;
+  }
+  .nav
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .header-link
+  {
+    font-size: 18px;
+  }
+  .broadcast-title
+  {
+    font-size: 16px;
+  }
+  .footer-menu-item
+  {
+    font-size: 16px;
+  }
+  .social-title
+  {
+    font-size: 16px;
+  }
+  .win-placements
+  {
+    margin: 0;
+  }
+  .win-placement
+  {
+    font-size: 18px;
+  }
+  .header-container
+  {
+    padding: 16px 0;
+  }
+
+  .title-text
+  {
+    font-size: 26px;
+  }
+  .title-date
+  {
+    font-size: 18px;
+  }
+
+  .footer-menu
+  {
+    grid-column: 1/13;
+    flex-wrap: wrap;
+  }
+  .broadcast-title
+  {
+    grid-column: 1/9;
+  }
+  .title-text::before
+  {
+    display: none;
+  }
+  .title-date, .title-text
+  {
+    background: #ff4641;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  .main-container
+  {
+    padding: 20px 0;
+  }
+  .footer-grid
+  {
+    margin: 0;
+  }
+  .winners
+  {
+    flex-direction: column;
+  }
+  .more-block
+  {
+    grid-row: 4/5;
+  }
+  .countdown
+  {
+    grid-column: 1/8;
+  }
+}
+@media  (max-width: 640px){
+  .video-links
+  {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .youtube-block
+  {
+    flex-direction: column;
+  }
+  .countdown
+  {
+    grid-column: 1/13;
+  }
+  .more-block
+  {
+    grid-column: 1/13;
+  }
+  .big-button
+  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+  }
+  .youtube-link
+  {
+    margin-top: 12px;
+  }
+  .twitch-link
+  {
+    margin-top: 12px;
+  }
+  .annons-block
+  {
+    grid-column: 1/13;
+  }
+}
+@media  (max-width: 500px) {
+  .social-block
+  {
+    flex-direction: column;
+  }
+  .broadcast-num
+  {
+    width: 14px;
+    font-size: 10px;
+  }
+  .my-broadcasts
+  {
+    flex-direction: column;
+  }
+}
+
+
+
