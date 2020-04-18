@@ -1,7 +1,7 @@
 body {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox; 
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -408,7 +408,7 @@ a {
   width: 100%; }
 
 .back-image {
-  background: url(/images/trent.png) no-repeat;
+  background: url(/autochessmasters/images/trent.png) no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
@@ -421,7 +421,7 @@ a {
           background-size: contain; }
 
 .back-snow {
-  background: url(/images/snow-4.png) no-repeat;
+  background: url(/autochessmasters/images/snow-4.png) no-repeat;
   border-radius: 4%;
   background-position-x: right;
   background-position-y: bottom;
@@ -429,7 +429,7 @@ a {
           background-size: contain !important; }
 
 .back-snow-2 {
-  background: url(/images/snow-3.png) no-repeat;
+  background: url(/autochessmasters/images/snow-3.png) no-repeat;
   background-position-x: left;
   background-position-y: top;
   border-radius: 4%; }

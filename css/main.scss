@@ -313,15 +313,15 @@ a{
 }
 .back-snow
 {
-  background: url(/images/snow-4.png) no-repeat;
+  background: url(/autochessmasters/images/snow-4.png) no-repeat;
   border-radius: 4%;
   background-position-x: right;
   background-position-y: bottom;
   background-size: contain!important;
-}
+} 
 .back-snow-2
 {
-  background: url(/images/snow-3.png) no-repeat;
+  background: url(/autochessmasters/images/snow-3.png) no-repeat;
   background-position-x: left;
   background-position-y: top;
   border-radius: 4%;
@@ -356,7 +356,6 @@ a{
 .video
 {
   width: 100%;
-  //min-width: 50vh;
   height: 100%;
   min-height: 300px;
 }
@@ -364,9 +363,6 @@ a{
 {
   font-size: 28px;
   margin-bottom: 12px;
-}
-.countdown-time{
-
 }
 .title-text:before {
   display: flex;
